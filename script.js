@@ -21,12 +21,6 @@ function drawFood(){
   ctx.fillRect(body.x * 25, body.y * 25, 25, 25);
 }
 
-function drawScore(){
-  ctx.fillStyle = "white";
-  ctx.font = "20px Verdana";
-  ctx.fillText("Score " + score, canvas.width - 90, 25);
-}
-
 function background(){
   ctx.fillStyle = "black";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -54,7 +48,6 @@ function gameLoop(){
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   requestAnimationFrame(gameLoop);
   background();
-  drawScore();
   drawObject();
   drawFood();
 }
