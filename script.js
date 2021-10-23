@@ -1,9 +1,6 @@
 let canvas = document.getElementById("game");
 let ctx = canvas.getContext("2d");
 
-let tileCount = 10;
-let score = 0;
-
 let head = {
   x: Math.floor(Math.random() * 20),
   y: Math.floor(Math.random() * 20)
